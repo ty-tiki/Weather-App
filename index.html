@@ -20,21 +20,32 @@
   <body>
     <div class="weather-app-main">
       <header>
-        <form>
-          <input type="search" placeholder="Enter city here..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter city here..."
+            required
+            class="city-search"
+          />
+          <input type="submit" value="Search" class="submit-search" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>London</h1>
-          <p>
-            Tuesday 11:19, broken clouds
-            <br />
-            Humidity: 77%, Wind: 7.2km/h
-          </p>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-app-city">London</h1>
+            <p class="weather-app-details">
+              Tuesday 11:19, broken clouds
+              <br />
+              Humidity: <strong> 77%,</strong> Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-forecast">
+            <div class="weather-app-emoji">🌧️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌧️ 12°</div>
       </main>
       <footer>
         Built by
