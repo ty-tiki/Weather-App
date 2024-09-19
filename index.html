@@ -6,7 +6,6 @@
     <link
       rel="stylesheet"
       href="src/style.css"
-      <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
     />
@@ -15,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title></title>
   </head>
   <body>
@@ -34,7 +34,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-app-city" id="weather-app-city">London</h1>
+            <h1 class="weather-app-city" id="weather-app-city"></h1>
             <p class="weather-app-details">
               Tuesday 11:19, broken clouds
               <br />
@@ -43,7 +43,7 @@
           </div>
           <div class="weather-app-forecast">
             <div class="weather-app-emoji">🌧️</div>
-            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-temperature" id="current-temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
