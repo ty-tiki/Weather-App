@@ -6,10 +6,12 @@ function updateWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let speedElement = document.querySelector("#speed");
   let timeElement = document.querySelector("#time");
+  let emojiElement = document.querySelector("#weather-emoji");
   let date = new Date(response.data.time * 1000);
 
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
+  emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-emoji">`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%,`;
   speedElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
